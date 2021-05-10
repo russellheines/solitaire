@@ -150,7 +150,7 @@
                 let n = Math.min($(".stock").find(".card").length, 3);
                 let cards = $(".stock").find(".card").slice(-n).detach();
 
-                $(".talon").find(".card").css({ top: 0, left: 0 });
+                $(".talon").find(".card").css({ top: 0, left: 0, zIndex: 1 });
                 $(".talon").append(cards);
                 cards.each(function(index) {
                     $(this).find("img").attr("src", "img/" + $(this).data("suit") + $(this).data("value") + ".png");
